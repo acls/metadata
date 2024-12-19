@@ -291,7 +291,7 @@ func (b *Box) unpackChildren() error {
 		off += 8
 		datalen := c.ContentSize()
 		if int64(len(b.Raw)) < int64(off)+datalen {
-			return formatError("%s/%s unpack EOF", b.Type, c.Type, c.Size)
+			return formatError("%s/%s %d unpack EOF", b.Type, c.Type, c.Size)
 		}
 		c.Raw = b.Raw[off : off+int(datalen)]
 		b.Child = append(b.Child, c)

@@ -47,7 +47,7 @@ func TestOrient(t *testing.T) {
 			wantt := src.Bounds().Dx() == want.Bounds().Dy()
 			gott := IsTranspose(o)
 			if wantt != gott {
-				t.Errorf("IsTranspose(%d) reports %v, want %v", gott, wantt)
+				t.Errorf("IsTranspose reports %v, want %v", gott, wantt)
 			}
 		}
 	}
