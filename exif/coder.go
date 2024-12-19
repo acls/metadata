@@ -141,11 +141,7 @@ func DecodeBytes(p []byte) (*Exif, error) {
 // or the encoded length is too long for Exif.
 //
 // To store the Exif within an image, use Copy instead.
-func (x *Exif) EncodeBytes() ([]byte, error) {
-	return x.encodeBytes(nil)
-}
-
-func (x *Exif) encodeBytes(prefix []byte) ([]byte, error) {
+func (x *Exif) EncodeBytes(prefix []byte) ([]byte, error) {
 	// prepare sub-IFDs
 	subifd := []struct {
 		idx int // within IFD0

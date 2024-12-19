@@ -41,7 +41,7 @@ func TestNewImageLatLong(t *testing.T) {
 	)
 	x.SetLatLong(lat, lon)
 
-	xenc, err := x.EncodeBytes()
+	xenc, err := x.EncodeBytes(nil)
 	if err != nil {
 		t.Fatal("EncodeBytes:", err)
 	}
