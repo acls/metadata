@@ -71,7 +71,7 @@ func testEncodeBytes(t *testing.T, fn string) {
 		t.Fatal("DecodeBytes:", err)
 	}
 
-	enc, err := x.EncodeBytes()
+	enc, err := x.EncodeBytes(nil)
 	if err != nil {
 		t.Fatal(err)
 	}
