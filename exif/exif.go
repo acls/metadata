@@ -108,10 +108,10 @@ func Copy(w io.Writer, r io.Reader, x *Exif) error {
 
 		switch {
 		case jfifChunk == nil && cmpChunkHeader(seg, jfifChunkHeader):
-			jfifChunkHeader = seg
+			jfifChunk = seg
 			has++
 		case jfxxChunk == nil && cmpChunkHeader(seg, jfxxChunkHeader):
-			jfxxChunkHeader = seg
+			jfxxChunk = seg
 			has++
 		case !hasExif && cmpChunkHeader(seg, exifChunkHeader):
 			hasExif = true
