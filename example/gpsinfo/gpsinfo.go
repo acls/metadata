@@ -6,8 +6,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/tajtiattila/metadata/exif"
-	"github.com/tajtiattila/metadata/exif/exiftag"
+	"github.com/acls/metadata/exif"
+	"github.com/acls/metadata/exif/exiftag"
 )
 
 func main() {

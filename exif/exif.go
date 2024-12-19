@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"io"
 
-	xjpeg "github.com/tajtiattila/metadata/jpeg"
+	xjpeg "github.com/acls/metadata/jpeg"
 )
 
 var (

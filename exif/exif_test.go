@@ -10,7 +10,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/tajtiattila/metadata/testutil"
+	"github.com/acls/metadata/testutil"
 )
 
 func TestCopy(t *testing.T) {
